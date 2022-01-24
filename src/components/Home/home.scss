@@ -1,0 +1,88 @@
+$padding: 70px;
+
+.content {
+    display: flex;
+    justify-content: center;
+    .content__panel{
+        width: 1080px;
+        .content__upperpanel{
+            margin: 15px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .upperpanel__btn{
+                padding: 15px;
+                background: black;
+                color: white;
+                text-decoration: none;
+                border-radius: 8px;
+                &:hover{
+                    background: rgb(70, 67, 67);
+                }
+            }
+            input {
+                width: 300px;
+                padding: 5px;
+            }
+        }
+        .content__mainpanel{
+            display: flex;
+            justify-content: center;
+            .content__table{
+                thead {
+                    background: black;
+                    color: white;
+                    th{
+                        padding-left: $padding;
+                        &:first-child{
+                            padding: 5px;
+                        }
+                    }
+                }
+                tbody{
+                        tr{
+                            padding: 10px;
+                            &:hover{
+                                background: rgb(61, 60, 60);
+                                color: white;
+                            }
+                            td{
+                                padding-left: $padding;
+                                &:first-child{
+                                    font-weight: 700;
+                                    padding: 5px;
+                                }
+                            }
+                    }
+                }
+                .table__edit{
+                padding: 6px;
+                margin: 3px;
+                background: rgba(12, 34, 231, 0.815);
+                color: white;
+                border: 1px solid black;
+                text-decoration: none;
+                border-radius: 8px;
+                &:hover{
+                    background: rgb(255, 255, 255);
+                    color: black;
+                }
+                }
+                .table__delete{
+                    padding: 6px;
+                margin: 3px;
+                background: rgba(231, 12, 12, 0.815);
+                color: white;
+                border: 1px solid black;
+                text-decoration: none;
+                border-radius: 8px;
+                &:hover{
+                    background: rgb(255, 255, 255);
+                    color: black;
+                } 
+                }
+            }
+        }
+    }
+}
+

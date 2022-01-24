@@ -1,0 +1,14 @@
+.navbar{
+    // width: 100%;
+    background: rgb(22, 22, 22);
+    .navabar__content{
+        padding: 10px;
+        .navbar__title{
+            text-decoration: none;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            text-align: center;
+        }
+    }
+}
