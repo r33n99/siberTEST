@@ -33,7 +33,7 @@ const AddContact = () => {
 
   return (
     <div>
-      <h1>Add Post</h1>
+      <h1>Add Contact</h1>
       <div>
         <div>
           <form onSubmit={handleSubmit}>
