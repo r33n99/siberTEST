@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router";
-import { toast } from "react-toastify";
 import "./addContact.scss";
 
 // the component for adding a new contact, so far it will be disabled, if necessary, I can finish it
 
-const AddPost = () => {
+const AddContact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -29,7 +28,6 @@ const AddPost = () => {
     };
 
     dispatch(addContact(data));
-    toast.success("Contact added successfully!!");
     history("/");
   };
 
@@ -64,7 +62,7 @@ const AddPost = () => {
               />
             </div>
             <div>
-              <input type="submit" value="Add Student" />
+              <input type="submit" value="Add Contact" />
             </div>
           </form>
         </div>
@@ -72,4 +70,4 @@ const AddPost = () => {
     </div>
   );
 };
-export default AddPost;
+export default AddContact;
